@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "inst414_semester_project"
+version = "0.0.1"
+description = "Preprocessing of data from an NSW remote work survey in 2020 as well as preliminary and final analyses."
+authors = [
+  { name = "Ahmed Khan" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.13.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["inst414_semester_project"]
+include = ["pyproject.toml", "inst414_semester_project/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["inst414_semester_project"]
+force-sort-within-sections = true
+
