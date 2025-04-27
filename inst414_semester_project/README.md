@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-Preprocessing of data from an NSW remote work survey in 2020 as well as preliminary and final analyses.
+This project investigates the impact of remote work on employee work-life balance and productivity. It uses survey data from the New South Wales (NSW) government's 2020 Remote Work Survey, analyzing changes in personal time, commute time, and self-reported productivity between remote work and in-office work settings.
 
 ## Project Organization
 
@@ -59,3 +59,16 @@ Preprocessing of data from an NSW remote work survey in 2020 as well as prelimin
 
 --------
 
+## How to run this project:
+
+1. Clone the repository:
+    git clone https://github.com/AhmedKhan927/inst414-semester-project.git
+2. Using terminal navigate to project folder:
+    cd inst414-semester-project
+3. (Recommended) Create and activate a fresh python virtual environment.
+4. Install required dependencies from requirements.txt:
+    pip install -r requirements.txt
+
+## Cloning repository
+This provides user with all necessary components of data from raw data, interim data, into the final processed data. Further,
+all compartmentalized sections of code are provided as well as the master code notebook with disorganized code. 

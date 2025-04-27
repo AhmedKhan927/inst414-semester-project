@@ -2,4 +2,11 @@ mkdocs
 pip
 python-dotenv
 ruff
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+statsmodels
+jupyter
 -e .
