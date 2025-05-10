@@ -3,8 +3,30 @@
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
+Author: Ahmed Khan
+Course: INST414
+Semester: Spring 2025
 
+## Overview
 This project investigates the impact of remote work on employee work-life balance and productivity. It uses survey data from the New South Wales (NSW) government's 2020 Remote Work Survey, analyzing changes in personal time, commute time, and self-reported productivity between remote work and in-office work settings.
+
+## Research Questions
+1. Does remote work significantly improve work-life balance compared to in-office work?
+2. What factors predict productivity during remote work?
+
+## Dataset
+Source: Kaggle (NSW Government Remote Work Survey)
+Sample Size: 1507 Responses
+Sample Size After Cleaning: 899
+
+Features Used:
+- Time spent remote vs. in-office
+- Self-reported productivity
+- Commute and prep time
+- Collaboration ease
+- Preference for remote work
+
+   
 
 ## Project Organization
 
@@ -59,16 +81,38 @@ This project investigates the impact of remote work on employee work-life balanc
 
 --------
 
-## How to run this project:
+## Methods used
+- Data Cleaning (null values, outliers, column renaming)
+- Exploratory Data Analysis, EDA (Boxplots, histograms, summary statistics)
+- Sign Test (non-parametric hypothesis testing)
+- Multiple Linear Regression (Predicting productivity from remote work factors)
 
-1. Clone the repository:
-    git clone https://github.com/AhmedKhan927/inst414-semester-project.git
-2. Using terminal navigate to project folder:
-    cd inst414-semester-project
-3. (Recommended) Create and activate a fresh python virtual environment.
-4. Install required dependencies from requirements.txt:
-    pip install -r requirements.txt
+## How to replicate the pipeline
 
-## Cloning repository
-This provides user with all necessary components of data from raw data, interim data, into the final processed data. Further,
-all compartmentalized sections of code are provided as well as the master code notebook with disorganized code. 
+1. Clone the repository
+```bash
+git clone https://github.com/AhmedKhan927/inst414-semester-project.git
+cd inst414-semester-project
+```
+2. Create and activate a virtual environment
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+3. Install packages
+
+```bash
+pip install -r requirements.txt
+```
+4. Launch a fresh Jupyter Notebook
+5. Follow the code cells in the notebooks folder to run the analysis and generate results.
+
+## Key Findings
+- Personal time significantly increases on remote workdays compared to in-office days.
+- Ease of collaboration is the strongest predictor of perceived productivity during remote work.
+- Employees save an average of 1.2 hours per day in prep and commute time when working remotely
+
+Documentation:
+See INST414 Research Project.pdf in docs/docs
